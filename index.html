@@ -14,11 +14,11 @@
         <nav id="navmain">
             <h1 style="color: red;">P <span style="color: white;">rishu.</span></h1>
             <ol id="navtext">
-                <li>Home</li>
-                <li>About</li>
-                <li>service</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
+                <a href=""><li>Home</li></a>
+                <a href="#mydetail"><li>About</li></a>
+                <a href="#service"><li>service</li></a>
+                <a href="#projects"><li>Portfolio</li></a>
+                <a href="#footer"><li>Contact</li></a>
             </ol>
         </nav>
         <div id="picdetail">
@@ -58,13 +58,13 @@
     </div>
 
 </section>
-<section class ="myservice">
+<section class ="myservice" id="service">
     <div class="inbetween">
         <div class="myservicetext">
               <h1 style="color: white;">My Project</h1>
         </div>
         <div class="threeboxes">
-             <div class="project">
+             <div id="projects" class="project">
                  <img src="Mystic mart Using Core java and Oracle (1).png" alt="">
                  <p>Link to project</p>
              </div>
@@ -111,31 +111,35 @@
 
 <!-- /* Registration page */ -->
 
-<section>
-  <div class="container">
-    <div class="wrapper">
-      <div class="title"><span>Login Form</span></div>
-      <form action="#">
-        <div class="row">
-          <i class="fas fa-user"></i>
-          <input type="text" placeholder="Email or Phone" required>
-        </div>
-        <div class="row">
-          <i class="fas fa-lock"></i>
-          <input type="password" placeholder="Password" required>
-        </div>
-        <div class="pass"><a href="#">Forgot password?</a></div>
-        <div class="row button">
-          <input type="submit" value="Login">
-        </div>
-        <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
-      </form>
+<section id="inputform">
+  <!-- <h1>Hii please join us</h1> -->
+  <div id="input_container">
+    <div id="form_fig">
+      <!-- <h2>hey</h2> -->
+       <img id="image" src="./join_us-removebg-preview.png" alt="">
     </div>
+    <div id="form">
+      <label style="font-weight: 500; padding: 5px; margin: 10px;" for="name">Name</label><br>
+        <input style="border: 1px solid black; padding: 5px; margin: 10px;" type="text" placeholder="Enter name" required>
+      <br>
+      <label style=" font-weight: 500;; margin-bottom: ;" for="name">Email Id</label><br>
+        <input style="border: 1px solid black; padding: 5px; margin: 10px;" type="text" placeholder="xyz@gmail.com" required>
+     <br>
+     <label style="font-weight: 500; margin-bottom: ;" for="name">Address</label><br>
+        <input style="border: 1px solid black; padding: 5px; margin: 10px;" type="text" placeholder="" required>
+    <br>
+    <label style="font-weight: 500; margin-bottom: ;" for="name">Contact</label><br>
+        <input style="border: 1px solid black; padding: 5px; margin: 10px;" type="text" placeholder="+91" required>
+    <button id="btn-join" style="border: 2px solid rgb(84, 113, 39); padding: 10px; border-radius: 6px; margin-top: 20px; ">Join us now</button>
+    
+    
+      </div>
+    
+         
   </div>
-
-  
 </section>
-<footer class="footer">
+
+<footer id="footer" class="footer">
     <video class="footer_video" muted="" loop="" autoplay src="//cdn.shopify.com/s/files/1/0526/6905/5172/t/5/assets/footer.mp4?v=29581141968431347981633714450" type="video/mp4">
     </video>
   
@@ -145,7 +149,7 @@
           <div class="layout">
             <div class="layout_item w-50">
               <div class="newsletter">
-                <h3 class="newsletter_title">Get updates on fun stuff you probably want to know about in your inbox.</h3>
+                <h3 class="newsletter_title">"Frontend Developer skilled in Java, poised to amplify your digital presence with dynamic solutions. </h3>
                 <form action="">
                   <input type="text" placeholder="Email Address">
                   <button>
@@ -163,18 +167,18 @@
                 <h4 class="c-nav-tool_title">Menu</h4>
                 <ul class="c-nav-tool_list">
                   <li>
-                    <a href="/collections/all" class="c-link">Shop All</a>
+                    <a href="/collections/all" class="c-link">Home</a>
                   </li>
   
                   <li>
-                    <a href="/pages/about-us" class="c-link">About Us</a>
+                    <a href="/pages/about-us" class="c-link">About me</a>
                   </li>
   
                   <li>
-                    <a href="/blogs/community" class="c-link">Community</a>
+                    <a href="/blogs/community" class="c-link">Service</a>
                   </li>
                   <li>
-                    <a href="#" class="c-link">Vibes</a>
+                    <a href="#" class="c-link">Contact</a>
                   </li>
                 </ul>
               </nav>
@@ -187,15 +191,15 @@
                 <ul class="c-nav-tool_list">
   
                   <li class="c-nav-tool_item">
-                    <a href="/pages/shipping-returns" class="c-link">Shipping &amp; Returns</a>
+                    <a href="/pages/shipping-returns" class="c-link">Full stack developer &amp; Returns</a>
                   </li>
   
                   <li class="c-nav-tool_item">
-                    <a href="/pages/help" class="c-link">Help &amp; FAQ</a>
+                    <a href="/pages/help" class="c-link">ServiceNow</a>
                   </li>
   
                   <li class="c-nav-tool_item">
-                    <a href="/pages/terms-conditions" class="c-link">Terms &amp; Conditions</a>
+                    <a href="/pages/terms-conditions" class="c-link">My work as developer</a>
                   </li>
   
                   <li class="c-nav-tool_item">
@@ -293,6 +297,7 @@
       </div>
     </div>
   </footer>
-    
+    <script src="script.js"></script>
 </body>
+
 </html>
