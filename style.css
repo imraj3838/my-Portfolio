@@ -6,21 +6,30 @@
     box-sizing: border-box;
 }
 .hero-section{
+  /* gap: 10px; */
     height: 100vh;
     width: 100vw;
     background-color: rgb(0, 0, 0);
 }
 #navmain{
-    height: 15vh;
+    height: 10vh;
     width: 100%;
     display: flex;
     padding: 40px 70px;
     justify-content: space-between;
 }
+#navmain{
+  background-color: #333d79ff;
+  position: fixed;
+  z-index: 1;
+  border-bottom: 1px solid white;
+}
 #picdetail{
     display: flex;
+    /* margin-top: 30px; */
 }
 #mydetail{
+  /* margin-top: 30px; */
     padding-top: 10%;
     padding-left: 8%;
     height: 85vh;
@@ -41,7 +50,7 @@ background-color: white;
 
 }
 #mypic{
-    height: 85vh;
+    height: 100vh;
     width: 50vw;
     /* padding-bottom: 4%; */
     padding-left: 5%;
@@ -59,7 +68,7 @@ background-color: white;
   /* display: flex; */
   /* gap: 30px; */
   font-size: large;
-  font-weight: 300;
+  font-weight: 400;
   color: azure;
 }
 #navtext li{
